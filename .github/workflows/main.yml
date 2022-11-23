@@ -24,3 +24,18 @@ jobs:
     - uses: actions/checkout@v3 # Checking out and using the repo assigned to this workflow
     - run: chmod +x cool_script.sh # Granting permission access to our script
     - run: ./cool_script.sh # Running our script
+
+# Exercise - Create a new job, within this job clone down your repo using a GitHub action 
+# When the repo is cloned run a script you have created which does atleast 4 things from the following:
+# - add new file
+# - remove files / directories
+# - make directory
+# - move files
+# - prints out the current location
+# - prints out the current user 
+# - adds a line of text to an existing file
+# - simple if else statement using another function 
+# - prints out all of the files in a repo
+# - pushes a file to a different repo 
+
+# Stretch goal - Try to run a simple Python or JavaScript (NodeJs) script with GitHub Actions 
