@@ -2,6 +2,11 @@
 name: Git Actions Demo
 # The workflow / CI Server runs / triggers when there is a push to the repo 
 on: [push]
+
+# Global env variable
+env:
+  app_name: C00l_4PP.exe
+
 # What jobs do we want as part of our workflow
 jobs:
   actions_demo:
@@ -24,6 +29,7 @@ jobs:
     - uses: actions/checkout@v3 # Checking out and using the repo assigned to this workflow
     - run: chmod +x cool_script.sh # Granting permission access to our script
     - run: ./cool_script.sh # Running our script
+    - run: echo "Hello $name"
 
 # Exercise - Create a new job, within this job clone down your repo using a GitHub action 
 # When the repo is cloned run a script you have created which does atleast 4 things from the following:
@@ -39,3 +45,19 @@ jobs:
 # - pushes a file to a different repo 
 
 # Stretch goal - Try to run a simple Python or JavaScript (NodeJs) script with GitHub Actions 
+
+# Variable - Placeholder for information 
+# Environment variable - Placeholder for information that exists in this scope / machine / terminal
+# Env var types: 
+# Global - are accessible and usable EVERYWHERE, version numbers, dev team / names, build name (outside of jobs: )
+# Local  - Only usable in the job / step you have specified
+# Secret - confidential or private variables
+
+  env_vars_job:
+    runs-on: ubuntu-latest
+    env:
+      name: Toni
+    steps:
+    - run: echo "Hello World"
+    - run: echo "Hello $name" # name is the env var name, we access it with $var
+    - run: echo $app_name
