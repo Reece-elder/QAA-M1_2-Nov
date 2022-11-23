@@ -15,4 +15,5 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: echo "$USER"
-    - run: cat README.md
+    - run: git clone https://github.com/Reece-elder/QAA-M1_2-Nov
+    - run: cat QAA-M1_2-Nov/README.md
