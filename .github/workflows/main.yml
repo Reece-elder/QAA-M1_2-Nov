@@ -7,8 +7,8 @@ jobs:
   actions_demo:
     runs-on: ubuntu-latest  # Creating a container (virtual machine) that uses ubuntu
     # What do we want this machine to do?
-    steps: 
+    steps:
+    - run: sleep 10
     - run: echo "Hello World!"
     - run: ls -a
     - run: pwd
-  
