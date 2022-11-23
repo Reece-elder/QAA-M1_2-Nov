@@ -1,0 +1,44 @@
+# YAML is a configuration language used as InfraStructure as Code
+# With YAML we write configurations and settings, that software can understand 
+
+# YAML - Yet Another Markup Language 
+# YAML - YAML Ain't Markup language
+
+# YAML uses Key Value pairs
+# My name is reece, my fav colour is purple and I live in Wales 
+# my age is 27, my phone number is 07364
+# I can swim, my fav word is false
+# My fav foods are: yaki udon, peanut butter toast, mango
+# My dog Boba is a corgi, who is fluffy, tri colour and bites me
+
+# name is the key, Reece is the value
+name: Reece
+fav_colour: Purple
+location: Wales
+age: 27
+number: "07364" 
+#(7364)
+swim: true # true and false are BOOLEAN values
+fav_word: "false" 
+fav_foods: # An array of details
+- yaki udon # VERY IMPORTANT ITS -_ (dash + space)
+- peanut butter toast
+- mango
+pet: My dog Boba is a corgi, who is fluffy, tri colour and bites me # Not the best way of coding
+better_pet: # better_pet is the key
+  name: Boba # All below key value pairs ARE the value of better_pet
+  breed: Corgi
+  fluffy: true
+  bites_me: 
+    blood: true
+    pain: 10
+
+# When working with YAML the data types it takes in are: 
+# Strings - text
+# Numbers - 123
+# Arrays - lists of data
+# Boolean - true or false
+# Objects
+
+# Exercise Write a yaml file about yourself that includes atleast 5 key value pairs of different data types
+# and also includes a nested object (pet, you could do fav book, fav recipe, family_member)
