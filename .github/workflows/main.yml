@@ -62,3 +62,7 @@ jobs:
     - run: echo "Hello $name" # name is the env var name, we access it with $var
     - run: echo $app_name
     - run: echo "${{secrets.SECRET_PASSWORD}}"
+
+# Exercise - Within your yaml, create a global variable and local variable
+# Create a command which prints one and another with appends it to a file
+# Create a secret variable within Github and attempt to print it to the terminal 
